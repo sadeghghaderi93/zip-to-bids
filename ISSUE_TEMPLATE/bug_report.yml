@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible problem without sharing participant data.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not attach DICOM files, cohort tables with participant information, or generated imaging data. Use synthetic filenames and metadata where possible.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal steps to reproduce
+      description: Include the smallest safe example you can provide.
+    validations:
+      required: true
+  - type: input
+    id: dcm2niix
+    attributes:
+      label: dcm2niix version
+      description: Copy the version written in ZIP_TO_BIDS_SETTINGS.json.
+  - type: textarea
+    id: log
+    attributes:
+      label: Relevant error text
+      description: Remove participant identifiers and private Drive paths before pasting logs.
