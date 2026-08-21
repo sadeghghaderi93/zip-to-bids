@@ -1,0 +1,10 @@
+cff-version: 0.1.0
+title: ZIP-to-BIDS
+type: software
+message: "If you use this software in research, please cite the repository release you used."
+authors:
+  - family-names: Ghaderi
+    given-names: Sadegh
+version: 0.1.0
+date-released: 2026-08-21
+license: MIT
